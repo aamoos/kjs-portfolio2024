@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+  <meta
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    name="viewport"
+  />
+
+  <title>Homepage | Atom Template</title>
+
+  <meta property="og:title" content="Homepage | Atom Template" />
+
+  <meta property="og:locale" content="en_US" />
+
+  <link
+    rel="canonical"
+    href="//"
+  />
+
+  <meta
+    property="og:url"
+    content="//"
+  />
+
+  <meta
+    name="description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  />
+
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+
+  <meta name="theme-color" content="#5540af" />
+
+  <meta property="og:site_name" content="Atom Template" />
+
+  <meta property="og:image" content="//assets/img/social.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:site" content="@tailwindmade" />
+
+  <link
+    crossorigin="crossorigin"
+    href="https://fonts.gstatic.com"
+    rel="preconnect"
+  />
+
+  <link
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="preload"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+    crossorigin="anonymous"
+    href="/assets/styles/main.min.css"
+    media="screen"
+    rel="stylesheet"
+  />
+  
+  <script
+    defer
+    src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
+  ></script>
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  
+</head>
+
+
+  <body
+    :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
+    class="relative"
+    x-data="{ mobileMenu: false }"
+  >
+    
+    <div id="main" class="relative">
+      <div
+  x-data="{
+    triggerNavItem(id) {
+        $scroll(id)
+    },
+    triggerMobileNavItem(id) {
+        mobileMenu = false;
+        this.triggerNavItem(id)
+    }
+}"
+>
+  <div class="w-full z-50 top-0 py-3 sm:py-5  absolute
+  ">
+  <div class="container flex items-center justify-between">
+    <div>
+      <a href="/">
+        <!-- <img src="/assets/img/logo.svg" class="w-24 lg:w-48" alt="logo image" /> -->
+        <h1 class="text-center font-header font-semibold text-4xl text-white sm:text-left sm:text-5xl md:text-4xl">김재성 포트폴리오</h1>
+      </a>
+    </div>
+    <div class="hidden lg:block">
+      <ul class="flex items-center">
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#about')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Skill</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#services')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Experience</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#portfolio')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >SideProject</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <!-- <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#clients')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Clients</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li> -->
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#work')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Career</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <!-- <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#statistics')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Statistics</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li> -->
+        
+        <!-- <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#blog')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Blog</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li> -->
+        
+        <!-- <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#contact')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Contact</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li> -->
+        
+      </ul>
+    </div>
+    <div class="block lg:hidden">
+      <button @click="mobileMenu = true">
+        <i class="bx bx-menu text-4xl text-white"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div
+  class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
+  :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
+>
+  <div
+    class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"
+  >
+    <button
+      class="absolute top-0 right-0 mt-4 mr-4"
+      @click="mobileMenu = false"
+    >
+      <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
+    </button>
+
+    <ul class="mt-8 flex flex-col">
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#about')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >About</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#services')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Services</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#portfolio')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Portfolio</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#clients')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Clients</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#work')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Work</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#statistics')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Statistics</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#blog')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Blog</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#contact')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Contact</span
+        >
+        
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+      <div><div
+  class="relative bg-cover bg-center bg-no-repeat py-8"
+  style="background-image: url(/assets/img/bg-hero.jpg)"
+>
+  <div
+    class="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat"
+  ></div>
+
+  <div
+    class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48"
+  >
+    <div class="flex flex-col items-center justify-center lg:flex-row">
+      <div class="rounded-full border-8 border-primary shadow-xl">
+        <img
+          src="/assets/img/blog-author.jpg"
+          class="h-48 rounded-full sm:h-56"
+          alt="author"
+        />
+      </div>
+      <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+        <h1
+          class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-4xl"
+        >
+          안녕하세요.
+          <br>
+          더나은 코드를 개발하기 위해 노력하는
+          <br>
+          백엔드 개발자 김재성입니다.
+        </h1>
+        <div
+          class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
+        >
+          <div
+            class="flex items-center justify-center pl-0 sm:justify-start md:pl-1"
+          >
+            <p class="font-body text-lg uppercase text-white">Let's connect</p>
+            <div class="hidden sm:block">
+              <i class="bx bx-chevron-right text-3xl text-yellow"></i>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
+          >
+            <a href="https://aamoos.tistory.com/">
+              <i
+                class="bx bxl-blogger text-2xl text-white hover:text-yellow"
+              ></i>
+            </a>
+            <a href="https://github.com/aamoos">
+              <i class="bx bxl-github text-2xl text-white hover:text-yellow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-grey-50" id="about">
+  <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+    <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+      <h2
+        class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+      >
+        SKILL
+      </h2>
+      <h4
+        class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+      >
+        FRONT END
+      </h4>
+      <p class="pt-6 font-body leading-relaxed text-grey-20">
+        현업에서 주로 JSP, JQUERY를 주로 사용하여 개발을 진행하였습니다. 
+        <br>사이드 프로젝트로 VUE JS를 사용하여 개발을 진행하고 있습니다. 
+        <br>디자인 UI FRAMEWORK로는 BOOT STRAP, TAILWIND CSS, ANT DESIGN을 사용 경험이 있습니다.
+      </p>
+      <div
+        class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start"
+      >
+      </div>
+    </div>
+    <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+      <div>
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">
+            JSP & JQUERY
+          </h4>
+          <h3 class="font-body text-3xl font-bold text-primary">90%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 90%"></div>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">VUE JS</h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">
+            HTML & CSS & JS
+          </h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">BOOT STRAP & TAILWIND CSS & ANT DESIGN</h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+    <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+      <h4 class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+        BACK END
+      </h4>
+      <p class="pt-6 font-body leading-relaxed text-grey-20">
+        현업에서 주로 SPRING BOOT를 사용하여 개발을 진행하였습니다. 
+        <br> 사용한 데이터베이스로는 MYSQL & MARIADB, ORACLE, POSTGRESQL이 있습니다. 
+      </p>
+      <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
+      </div>
+    </div>
+    <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+      <div>
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">
+            SPRING BOOT
+          </h4>
+          <h3 class="font-body text-3xl font-bold text-primary">90%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 90%"></div>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">MYSQL & MARIA DB</h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">
+            ORACLE
+          </h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">POSTGRESQL</h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+    <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+      <h4 class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+        DEPLOYMENT
+      </h4>
+      <p class="pt-6 font-body leading-relaxed text-grey-20">
+        배포 환경 경험으로는 우분투, AWS EC2 환경등에서 JENKINS, DOCKER 경험이 있습니다.
+      </p>
+      <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
+      </div>
+    </div>
+    <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">JENKINS</h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">
+            DOCKER
+          </h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+    <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+      <h4 class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+        VERSION CONTROL
+      </h4>
+      <p class="pt-6 font-body leading-relaxed text-grey-20">
+        형상관리툴로 SVN, GIT, BITBUCKET을 사용하였습니다. 
+      </p>
+      <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
+      </div>
+    </div>
+    <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">SVN</h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">
+            GIT
+          </h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="flex items-end justify-between">
+          <h4 class="font-body font-semibold uppercase text-black">
+            BITBUCKET
+          </h4>
+          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
+        </div>
+        <div class="mt-2 h-3 w-full rounded-full bg-lila">
+          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<div class="container py-16 md:py-20" id="services">
+  <h2
+    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+  >
+    Experience
+  </h2>
+  <!-- <h3
+    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+  >
+    These are the services Ioffer
+  </h3> -->
+
+  <div
+    class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
+  >
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-development-white.svg"
+            alt="development icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-development-black.svg"
+            alt="development icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          지도기반 어플리케이션 개발
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          서울시 상권분석 서비스 <br>
+          중앙일보 <br>
+          LGU+ 소호맵 <br>
+          투썸플레이스 MAST <br>
+          Hy 한국야구르트 제휴업체 API 서비스 <br>
+          사내 솔루션 trend-on, 부동산 서비스 <br>
+          JTI 서비스 <br>
+        </p>
+      </div>
+    </div>
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-content-white.svg"
+            alt="content marketing icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-content-black.svg"
+            alt="content marketing icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          공공기관 사이트 개발
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          고양시청 데이터세상 서비스 유지보수 <br>
+          창원시청 유지보수 <br>
+          광진구청 유지보수 <br>
+        </p>
+      </div>
+    </div>
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-mobile-white.svg"
+            alt="Mobile Application icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-mobile-black.svg"
+            alt="Mobile Application icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          하이브리드앱 개발
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          한국 GM 전자계약서 S-WORK (전자계약서) <br>
+          한국 GM E-COMMERCE API, 알림톡 <br>
+          3DEYES (3D 영상플레이어 앱) <br>
+        </p>
+      </div>
+    </div>
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-email-white.svg"
+            alt="Email Marketing icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-email-black.svg"
+            alt="Email Marketing icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          예약 서비스 개발
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          ymca 고양국제청소년문화센터 사이트 <br>
+          오픈메이트 사내 회의실 예약 시스템
+        </p>
+      </div>
+    </div>
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img src="/assets/img/icon-development-white.svg" alt="development icon" />
+        </div>
+        <div class="block group-hover:hidden">
+          <img src="/assets/img/icon-development-black.svg" alt="development icon" />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+          관리자 사이트 개발
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          한국TDB 신용정보 기업정보 데이터 작성 시스템<br>
+          주식회사 포디웰컴 4D Workman 관리자 시스템<br>
+          RSM 르노삼성 전자계약서 관리자 시스템 <br>
+        </p>
+      </div>
+    </div>
+    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img src="/assets/img/icon-development-white.svg" alt="development icon" />
+        </div>
+        <div class="block group-hover:hidden">
+          <img src="/assets/img/icon-development-black.svg" alt="development icon" />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+          그룹웨어 개발
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          자사 그룹웨어 시스템 개발
+        </p>
+      </div>
+    </div>
+    <!-- <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-design-white.svg"
+            alt="Theme Design icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-design-black.svg"
+            alt="Theme Design icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          Graphic Design
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+    </div> -->
+    <!-- <div class="group rounded px-8 py-12 shadow hover:bg-primary">
+      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+        <div class="hidden group-hover:block">
+          <img
+            src="/assets/img/icon-graphics-white.svg"
+            alt="Graphic Design icon"
+          />
+        </div>
+        <div class="block group-hover:hidden">
+          <img
+            src="/assets/img/icon-graphics-black.svg"
+            alt="Graphic Design icon"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <h3
+          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
+        >
+          Web Design
+        </h3>
+        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<div class="container py-16 md:py-20" id="portfolio">
+  <h2
+    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+  >
+    Side Proejct
+  </h2>
+  <!-- <h3
+    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+  >
+    Here's what I have done with the past
+  </h3> -->
+
+  <div
+    class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2"
+  >
+    <a
+      href="https://github.com/aamoos/travel"
+      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
+    >
+      <img
+        src="/assets/img/portfolio-travel.jpg"
+        class="w-full h-auto shadow"
+        alt="portfolio image"
+      />
+    </a>
+    <a
+      href="https://github.com/aamoos/chats"
+      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
+    >
+      <img
+        src="/assets/img/portfolio-chats.png"
+        class="w-full h-auto shadow"
+        alt="portfolio image"
+      />
+    </a>
+    <!-- <a
+      href="/"
+      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
+    >
+      <img
+        src="/assets/img/portfolio-fedex.jpeg"
+        class="w-full shadow"
+        alt="portfolio image"
+      />
+    </a> -->
+    <!-- <a
+      href="/"
+      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
+    >
+      <img
+        src="/assets/img/portfolio-microsoft.jpeg"
+        class="w-full shadow"
+        alt="portfolio image"
+      />
+    </a> -->
+  </div>
+</div>
+
+<!-- <div class="bg-grey-50" id="clients">
+  <div class="container py-16 md:py-20">
+    <div class="mx-auto w-full sm:w-3/4 lg:w-full">
+      <h2
+        class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+      >
+        My latest clients
+      </h2>
+      <div class="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
+        <span class="m-8 block">
+          <img
+            src="/assets/img/logo-coca-cola.svg"
+            alt="client logo"
+            class="mx-auto block h-12 w-auto"
+          />
+        </span>
+        <span class="m-8 block">
+          <img
+            src="/assets/img/logo-apple.svg"
+            alt="client logo"
+            class="mx-auto block h-12 w-auto"
+          />
+        </span>
+
+        <span class="m-8 block">
+          <img
+            src="/assets/img/logo-netflix.svg"
+            alt="client logo"
+            class="mx-auto block h-12 w-auto"
+          />
+        </span>
+
+        <span class="m-8 block">
+          <img
+            src="/assets/img/logo-amazon.svg"
+            alt="client logo"
+            class="mx-auto block h-12 w-auto"
+          />
+        </span>
+
+        <span class="m-8 block">
+          <img
+            src="/assets/img/logo-stripe.svg"
+            alt="client logo"
+            class="mx-auto block h-12 w-auto"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container py-16 md:py-20" id="work">
+  <h2
+    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+  >
+    Career
+  </h2>
+  <!-- <h3
+    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+  >
+    Here's what I did before freelancing
+  </h3> -->
+
+  <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+    <span
+      class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"
+    ></span>
+
+    <!-- <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+      <div class="md:w-2/5">
+        <div class="flex justify-center md:justify-start">
+          <span class="shrink-0">
+            <img
+              src="/assets/img/logo-spotify.svg"
+              class="h-auto w-32"
+              alt="company logo"
+            />
+          </span>
+          <div class="relative ml-3 hidden w-full md:block">
+            <span
+              class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-3/5">
+        <div class="relative flex md:pl-18">
+          <span
+            class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
+          ></span>
+
+          <div class="mt-1 flex">
+            <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+            <div class="md:-mt-1 md:pl-8">
+              <span class="block font-body font-bold text-grey-40"
+                >Apr 2015 - Mar 2018</span
+              >
+              <span
+                class="block pt-2 font-header text-xl font-bold uppercase text-primary"
+                >Frontend Developer</span
+              >
+              <div class="pt-2">
+                <span class="block font-body text-black"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
+                  venenatis enim.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+      <div class="md:w-2/5">
+        <div class="flex justify-center md:justify-start">
+          <span class="shrink-0">
+            <h1 class="font-header text-4xl font-semibold uppercase text-grey-30 sm:text-6xl lg:text-4xl">THINK-TREE</h1>
+            <!-- <img
+              src="/assets/img/logo-microsoft.svg"
+              class="h-auto w-32"
+              alt="company logo"
+            /> -->
+          </span>
+          <div class="relative ml-3 hidden w-full md:block">
+            <span
+              class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
+            ></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:w-3/5">
+        <div class="relative flex md:pl-18">
+          <span
+            class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
+          ></span>
+
+          <div class="mt-1 flex">
+            <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+            <div class="md:-mt-1 md:pl-8">
+
+              <span class="block font-body font-bold text-grey-40">2018.06 ~ 2018.10</span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">RSM 르노삼성 전자계약서</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>르노삼성 자동차 딜러가 사용하는 전자계약서 하이브리드앱을 개발하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>계약서 통계 관련 대시보드 개발</li>
+                    <li>전자 계약서 동의서 관련 개발</li>
+                    <li>르노삼성 계약서 admin 사이트 개발</li>
+                  </div>
+                </span>
+              </div>
+              <br>
+
+              <span class="block font-body font-bold text-grey-40">2019.01 ~ 2019.05</span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">AND U 회사 업무 관리 웹 사이트</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>사내에서 사용 및 판매 목적으로 그룹웨어 하이브리드앱, 관리자 사이트를 개발하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>푸시 발송관리 기능 개발</li>
+                    <li>공지사항, 갤러리 관리 개발</li>
+                    <li>회사 자산관리 기능 개발</li>
+                    <li>명함관리 개발</li>
+                    <li>MVC 패턴을 이용한 CRUD 개발</li>
+                    <li>스케줄러를 이용한 데이터 배치 프로세스 개발</li>
+                    <li>구글 Otp 개발</li>
+                    <li>회원가입 개발</li>
+                  </div>
+                </span>
+              </div>
+              <br>
+
+              <span class="block font-body font-bold text-grey-40">2019.06 ~ 2019.10</span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">YMCA 일산 피트니스 센터 예약 시스템 웹사이트</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>고양 YMCA 일산 피트니스 센터 예약 시스템 사이트를 개발하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>프로그램 결제 기능 오류 수정</li>
+                    <li>프로그램 예약 기능 개발</li>
+                    <li>MVC 패턴을 이용한 CRUD 개발</li>
+                    <li>공지사항, 사진 갤러리, 이벤트, FAQ 개발</li>
+                    <li>admin 사이트 개발</li>
+                    <li>일산 YMCA 고양국제 청소년 문화센터 사이트, 수강신청 오픈</li>
+                  </div>
+                </span>
+              </div>
+              <br>
+
+              <span class="block font-body font-bold text-grey-40">2019.11 ~ 2020.01</span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">한국TDB 신용정보 기업정보 데이터 작성 시스템</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>한국TDB 내에서 사용하는 신용정보 기업정보 데이터 작성 시스템을 개발 하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>업무관리 개발</li>
+                    <li>시스템관리 개발</li>
+                    <li>오픈후 일본 출장을가서 고객과 미팅후 문제가 됬던 PDF 용량 경량화 문제등을 해결</li>
+                  </div>
+                </span>
+              </div>
+              <br>
+
+              <span class="block font-body font-bold text-grey-40">2020.01 ~ 2020.08</span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">3D 영상 플레이어 3DEYES</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>사내에서 개발한 3D 영상 플레이어 하이브리드앱을 개발하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>친구추가 기능 개발</li>
+                    <li>영어, 한국어, 중국어로 번역 기능 개발</li>
+                    <li>MVC 패턴을 이용한 CRUD 개발</li>
+                    <li>Oauth2 개발 (구글, 카카오)</li>
+                    <li>웹 네이티브 간 통신 api 개발</li>
+                    <li>중국 상하이 it 박람회 출품에 기여</li>
+                  </div>
+                </span>
+              </div>
+              <br>
+
+              <span class="block font-body font-bold text-grey-40">2021.01 ~ 2021.05</span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">한국GM 쉐보레 이커머스</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>한국 GM 쉐보레에서 자동차 딜러를 거치지않고 고객이 직접 차종의 컬러, 모델 등을 선택해서 차량을 구매할수 있는 대국민 서비스에서 계약서 api 부분을 개발하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>카카오 알림톡 발송 모듈 개발</li>
+                    <li>jxls 라이브러리를 이용한 엑셀 템플릿 다운로드 기능 개발</li>
+                    <li>로그인 기능 개발</li>
+                    <li>MVC 패턴을 이용한 CRUD 개발</li>
+                    <li>Swagger api로 타회사에서 api를 사용해볼수있는 사이트 개발</li>
+                    <li>GM 쉐보레 사이트, 견적서, 계약서 간 데이터 전송 api 개발</li>
+                    <li>알림톡 발송 관리 사이트 개발</li>
+                  </div>
+                </span>
+              </div>
+              <br>
+
+
+
+
+              <span class="block font-body font-bold text-grey-40"
+                >2018.01 ~ 2021.05</span
+              >
+              <span
+                class="block pt-2 font-header text-xl font-bold uppercase text-primary"
+                >한국GM 쉐보레 전자계약서 S-W0RK</span
+              >
+              <div class="pt-2">
+                <span class="block font-body text-black"
+                  >
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>한국 GM 쉐보레에서 자동차 딜러들이 사용하는 전자 계약서 하이브리드앱을 유지보수하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>Apache Poi 엑셀 다운로드 기능 개발</li>
+                    <li>문자, 팩스, 알림톡 발송 기능 개발</li>
+                    <li>구글 otp 기능 개발</li>
+                    <li>MVC 패턴을 이용한 CRUD 개발</li>
+                    <li>JqGrid를 이용한 화면 개발</li>
+                    <li>로그인 기능 개발</li>
+                    <li>Firebase를 이용한 Push 기능 개발</li>
+                    <li>개발서버가 채굴서버로 해킹당해 새로운 서버 생성후 구성</li>
+                    <li>Open Api 사용 (juso.go.kr 도로명 주소 api 사용)</li>
+                    <li>스케줄러를 이용한 데이터 관리</li>
+                    <li>Phantom Js를 이용하여 웹페이지 화면 pdf로 생성</li>
+                    <li>admin 사이트 개발</li>
+                    <li>삼성카드, 롯데카드 계약서 발송</li>
+                    <li>FAQ 개발</li>
+                    <li>차종 카탈로그 개발</li>
+                    <li>차량 계약서 관리 요구사항 수정 및 반영</li>
+                    <li>시간별 차량 계약 제한 프로세스 개발</li>
+                    <li>기존에 Spring regacy, angular js 1.0, jquery로 개발이 섞여 있어서 유지보수가 어려워 angular.js 1.0을 걷어내고 jquery로 변경, Spring boot로
+                      리팩토링</li>
+                    <li>계약서 미리보기시 html 화면을 보여주는 방식이어서 phantom js로 html을 image로 생성시 계약서가 깨지는 현상이 빈번했는데, 계약서 전송시 해당 이미지를 base 64로 db에
+                      저장해놓고 그 이미지를 보여줌으로써 계약서가 깨지는 현상 수정</li>
+                    <li>계약서 전송시 타업체에서 데이터를 받는 프로세스인데 전송이 안됬을경우 재전송 프로세스 개발로 고객에게 재전송 요청을 안하게 기여</li>
+                    <li>알림창을 alert으로 사용하고 있었는데 해당 알림창이 모바일로 보는 화면에 어울리지 않아 공통 팝업으로 변경함으로써 미적 개선</li>
+                    <li>push 발송 기능을 개발함으로써 앱을 사용하는 사람들이 push 알림을 받아볼수 있게 기여</li>
+                    <li>firebase push 인증서가 년마다 갱신하게 등록되어 있었는데, APN KEY방식을 이용하여 갱신하지 않게 기여</li>
+                    <li>타회사에 가격표, 카탈로그를 받아서 관리하고 있었는데, 파일을 받지않고 그 회사의 view url에 접근해서 보여주는 방식으로 변경</li>
+                    <li>사용자가 앱을 사용하다가 질문이 있으면 Q&A를 발송하고 관리자가 해당 Q&A에 답변을 하면 push로 사용자에게 알려주는 기능 개발</li>
+                    <li>관리자가 앱 사용자들에게 이미지를 포함하는 대량의 push를 보낼수 있는 기능 개발</li>
+                  </div>
+                  </span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+      <div class="md:w-2/5">
+        <div class="flex justify-center md:justify-start">
+          <span class="shrink-0">
+            <h1 class="font-header text-4xl font-semibold uppercase text-primary sm:text-6xl lg:text-4xl">오픈메이트</h1>
+            <!-- <img
+              src="/assets/img/logo-fedex.svg"
+              class="h-auto w-32"
+              alt="company logo"
+            /> -->
+          </span>
+          <div class="relative ml-3 hidden w-full md:block">
+            <span
+              class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-3/5">
+        <div class="relative flex md:pl-18">
+          <span
+            class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
+          ></span>
+
+          <div class="mt-1 flex">
+            <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+            <div class="md:-mt-1 md:pl-8">
+              <span class="block font-body font-bold text-grey-40"
+                >2021.11 ~ 2022.01</span
+              >
+              <span
+                class="block pt-2 font-header text-xl font-bold uppercase text-primary"
+                >Hy 한국야구르트 제휴업체 API 서비스 개발</span
+              >
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>한국 야구르트내에서 사용하는 api 관리 사이트를 개발하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>프로젝트 설정 (tiles, mybatis, security 등)</li>
+                    <li>Oauth2 개발</li>
+                    <li>주소별 배송날짜 및 배송시간 조회 api 개발</li>
+                    <li>주소별 배송요일 및 배송시간 조회 api 개발</li>
+                    <li>Nexacro를 이용한 Api 관리 화면 개발</li>
+                    <li>회원가입, 로그인, 회원탈퇴등 admin 사이트 개발</li>
+                    <li>hy_gis 구역도 기반 주문 개선사항 개발</li>
+                  </div>
+                </span>
+              </div>
+               
+              <br>
+              <span class="block font-body font-bold text-grey-40">2022.02 ~ 2023.12</span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">한국산업단지공단 팩토리온</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>한국산업단지 공단에서 사용하는 공장 설립 민원신청 웹 사이트를 유지보수 하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>산업단지 내 분석 화면에서 전체 조회 가능하게 가능 개선 (admin, front 전부)</li>
+                    <li>산업단지 내 분석 화면에서 모든 업종으로도 검색되게 기능 개선</li>
+                    <li>공장설립분석 조건선택 URL 분리 개발</li>
+                    <li>업종 대시보드 개발</li>
+                    <li>전국별 산업단지 지도 표현</li>
+                    <li>건축물 대장 개발</li>
+                    <li>웹 취약성 대응 (파일 다운로드 get방식 -≫ post방식 변경)</li>
+                    <li>웹 보안성 대응(xss c:out 처리)</li>
+                    <li>URL 분리 개발로 3차 고도화에 활용</li>
+                  </div>
+                </span>
+              </div>
+
+              <br>
+              <span class="block font-body font-bold text-grey-40">2022.04 ~ </span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">서울시 상권분석 서비스</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>서울시에서 사용하는 상권분석 서비스 웹사이트를 유지보수 하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>고도화 오픈 당시 고도화 개발자 퇴사로 인해 남은 개발 잔여 사항 개발 및 오픈</li>
+                    <li>MultiPolygon map에 표현 개발</li>
+                    <li>wkt simplify 로직 수정</li>
+                    <li>시각장애인 그래프 차트 개발 (rMate Chart)</li>
+                    <li>상권 리포트, 클립 리포트 버그 사항 수정</li>
+                    <li>공지사항 팝업 관리 개발</li>
+                    <li>웹표준 대응 (nu html checker에서 나온 항목들 처리)</li>
+                    <li>서울시 통합연계 검색 api 개발</li>
+                    <li>웹취약성 대응(서울시에서 진단해서 내려온 항목들 처리)</li>
+                    <li>SSL 인증서 교체 (윈도우서버, ubuntu)</li>
+                    <li>서비스명 변경</li>
+                    <li>메인 배너 개발</li>
+                    <li>운영 DB 이관 대응</li>
+                    <li>상권 정보 주제도 오류 수정</li>
+                    <li>점포이력, 주변정보, 유동인구, 인구밀도(히트맵) 선택한 시군구 영역 지도 표현 개선</li>
+                  </div>
+                </span>
+              </div>
+
+              <br>
+              <span class="block font-body font-bold text-grey-40">2023.02 ~ 2024.01</span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">고양시청 열린 데이터 세상</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>고양시청에서 사용하는 공공 데이터 시각화 웹 사이트를 유지보수 하였습니다. (관리자, 프론트)</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>관리자 계정 `homework` 추가, 해당 계정 로그인시 시스템관리에 특정 메뉴 보여주기</li>
+                    <li>대민페이지 주요지표 내 월별인구 텍스트 수정 요청 (현재 devmin -≫ 관리자 텍스트로)</li>
+                    <li>데이터 공유셋 수정(공개, 비공개 가능 미작동(비공개로 해도 모든 기능 가능) 표에 맞게 기능 구현)</li>
+                    <li>데이터 공유셋 수정(등록화면 내 개인정보가 포함되어 있는 파일 등록 금지) 텍스트 추가 요청</li>
+                    <li>페쇄망 서버 SVN 설치 (centos 9)</li>
+                  </div>
+                </span>
+              </div>
+
+              <br>
+              <span class="block font-body font-bold text-grey-40">2023.02 ~</span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">투썸플레이스 Mast</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>투썸 플레이스 내에서 사용하는 상권정보 웹 사이트를 유지보수 하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>출점분석 ≫ 지역분석 ≫ 2월 조회 시 지도 데이터, 색 누락 건 수정</li>
+                    <li>xml 파일변경 요청 _test 없애기</li>
+                    <li>대시보드 - 팀, SC 선택하고 조회시 조회 수정</li>
+                    <li>매장분석 - 매장이력 관리 - 기초 정보 점포명 수정</li>
+                    <li>매장분석 - 매장이력 관리 - 기초 정보 ≫ 창원귀산점 조회시 Y/N 대소문자 혼용 -≫ 대문자 통일</li>
+                    <li>일전에 ITSD를 통해 올라온 대전법동점 상권도가 새로 그린 상권도가 날아가고 이전 상권도만 남는 현상 수정</li>
+                    <li>점포코드 대표점포로 변경소스 반영</li>
+                    <li>강원도에서 강원특별자치도로 바뀜에 따라, 기존 소스 변경(차트, 표)</li>
+                    <li>서울, 경기도, 광역시 가맹점 상생반경 500m 그외 1000m 그리기, 편집, 삭제, 전체 가맹점 marker, 상생반경 표시 개발</li>
+                  </div>
+                </span>
+              </div>
+
+              <br>
+              <span class="block font-body font-bold text-grey-40">2023.06 ~ </span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">LG U+ 소호맵</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>LG U+ 에서 상권 정보를 보여주는 하이브리드앱을 2차 고도화 잔여사항 수정 및 open, 유지보수 하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>ios에서 카카오맵 안나오는 현상 수정</li>
+                    <li>api 중복 호출 현상 수정</li>
+                    <li>기기에 따른 팝업 슬라이드 높이값 안맞는 현상 수정</li>
+                    <li>CVT 품질 지원팀에서 테스트 후 나온 버그 수정</li>
+                    <li>운영 반영 지원 및 버그 대응 (google chart 가로모드 세로모드 변경시 size 에러)</li>
+                    <li>cors 관련 대응</li>
+                    <li>Metieye 웹쉘 탐지 대응</li>
+                    <li>상권분석 오류 수정</li>
+                    <li>다른 회사 API 데이터 연계 개발</li>
+                  </div>
+                </span>
+              </div>
+
+              <br>
+              <span class="block font-body font-bold text-grey-40">2023.07 ~ </span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">하이트 진로 오아시스</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>하이트진로 내에서 사용하는 상권 정보를 보여주는 웹사이트를 유지보수 하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>메뉴가 tree.js로 구현이 되어있었는데, scoll을 내리면 하단이 짤리는 현상 개선</li>
+                    <li>담당자가 어떤 상권에 속하는지 추가, 수정, 삭제할수 있는 관리 화면 개발</li>
+                  </div>
+                </span>
+              </div>
+
+              <br>
+              <span class="block font-body font-bold text-grey-40">2023.07 ~ </span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">창원시청 주민자치 소통맵</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>창원시청에서 사용하는 주민자치 소통맵 서비스를 유지보수 하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>SSL 적용</li>
+                    <li>메뉴 구성 수정</li>
+                  </div>
+                </span>
+              </div>
+
+              <br>
+              <span class="block font-body font-bold text-grey-40">2023.07 ~ </span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">중앙일보 상권정보</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>중앙일보 내에서 사용하는 상권 정보를 보여주는 웹사이트를 유지보수 하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>강원도가 강원 특별자치도로 변경됨에 따라 기존 소스 변경</li>
+                  </div>
+                </span>
+              </div>
+
+              <br>
+              <span class="block font-body font-bold text-grey-40">2023.07 ~ 2023.10</span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">사내 회의실 예약 시스템</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>기존에 사내 회의실을 예약 할때 종이로 작성을 하여서 번거로워, 예약 웹사이트를 개발 하였습니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>Oauth2 (Microsoft) 로그인 개발</li>
+                    <li>Spring 기반 프로젝트 설정 구축(paging, tiles, security, mybatis 등)</li>
+                    <li>회의실 예약 30분 이전 팀즈 알람 메시지 발송 배치 개발</li>
+                    <li>Microsoft Teams 발송 refresh_token으로 access_token 발급, 메시지 발송 로직 개발</li>
+                  </div>
+                </span>
+              </div>
+
+              <br>
+              <span class="block font-body font-bold text-grey-40">2024.03 ~ </span>
+              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">상권분석 솔루션</span>
+              <div class="pt-2">
+                <span class="block font-body text-black">
+                  <div class="list-disc pl-4">
+                    <span>Description.</span>
+                    <li>광역시, 시군구, 행정동, 업종에 따른 상권 정보를 볼수 있는 사이트를 개발하였습니다. 추후 솔리데오 시스템즈 회사의 자두 app에 들어갈 예정입니다.</li>
+                    <br>
+                    <span>What did I do.</span>
+                    <li>상권 기본정보, 매출 기본정보, 매출액, 시간대별/요일 매출액 비율, 거주인구/세대수 추이등 상권 관련 정보를 볼수 있는 차트 리포트를 개발하였습니다.</li>
+                  </div>
+                </span>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="bg-cover bg-top bg-no-repeat pb-16 md:py-16 lg:py-24"
+  style="background-image: url(/assets/img/experience-figure.png)"
+  id="statistics"
+>
+  <div class="container">
+    <!-- <div
+      class="mx-auto w-5/6 bg-white py-16 shadow md:w-11/12 lg:py-20 xl:py-24 2xl:w-full"
+    >
+      <div class="grid grid-cols-2 gap-5 md:gap-8 xl:grid-cols-4 xl:gap-5">
+        <div
+          class="flex flex-col items-center justify-center text-center md:flex-row md:text-left"
+        >
+          <div>
+            <img
+              src="/assets/img/icon-project.svg"
+              class="mx-auto h-12 w-auto md:h-20"
+              alt="icon project"
+            />
+          </div>
+          <div class="pt-5 md:pl-5 md:pt-0">
+            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
+              12
+            </h1>
+            <h4
+              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
+            >
+              Finished Projects
+            </h4>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center text-center md:flex-row md:text-left"
+        >
+          <div>
+            <img
+              src="/assets/img/icon-award.svg"
+              class="mx-auto h-12 w-auto md:h-20"
+              alt="icon award"
+            />
+          </div>
+          <div class="pt-5 md:pl-5 md:pt-0">
+            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
+              3
+            </h1>
+            <h4
+              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
+            >
+              Awards Won
+            </h4>
+          </div>
+        </div>
+
+        <div
+          class="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0"
+        >
+          <div>
+            <img
+              src="/assets/img/icon-happy.svg"
+              class="mx-auto h-12 w-auto md:h-20"
+              alt="icon happy clients"
+            />
+          </div>
+          <div class="pt-5 md:pl-5 md:pt-0">
+            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
+              8
+            </h1>
+            <h4
+              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
+            >
+              Happy Clients
+            </h4>
+          </div>
+        </div>
+
+        <div
+          class="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0"
+        >
+          <div>
+            <img
+              src="/assets/img/icon-puzzle.svg"
+              class="mx-auto h-12 w-auto md:h-20"
+              alt="icon puzzle"
+            />
+          </div>
+          <div class="pt-5 md:pl-5 md:pt-0">
+            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
+              99
+            </h1>
+            <h4
+              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
+            >
+              Bugs Fixed
+            </h4>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- <div class="bg-grey-50" id="blog">
+  <div class="container py-16 md:py-20">
+    <h2
+      class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+    >
+      I also like to write
+    </h2>
+    <h4
+      class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+    >
+      Check out my latest posts!
+    </h4>
+    <div
+      class="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"
+    >
+      <a href="/post" class="shadow">
+        <div
+          style="background-image: url(/assets/img/post-01.png)"
+          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
+        >
+          <span
+            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
+          ></span>
+          <span
+            class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
+            >Read More</span
+          >
+        </div>
+        <div class="bg-white py-6 px-5 xl:py-8">
+          <span class="block font-body text-lg font-semibold text-black"
+            >How to become a frontend developer</span
+          >
+          <span class="block pt-2 font-body text-grey-20"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+          >
+        </div>
+      </a>
+      <a href="/post" class="shadow">
+        <div
+          style="background-image: url(/assets/img/post-02.png)"
+          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
+        >
+          <span
+            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
+          ></span>
+          <span
+            class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
+            >Read More</span
+          >
+        </div>
+        <div class="bg-white py-6 px-5 xl:py-8">
+          <span class="block font-body text-lg font-semibold text-black"
+            >My personal productivity system</span
+          >
+          <span class="block pt-2 font-body text-grey-20"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+          >
+        </div>
+      </a>
+      <a href="/post" class="shadow">
+        <div
+          style="background-image: url(/assets/img/post-03.png)"
+          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
+        >
+          <span
+            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
+          ></span>
+          <span
+            class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
+            >Read More</span
+          >
+        </div>
+        <div class="bg-white py-6 px-5 xl:py-8">
+          <span class="block font-body text-lg font-semibold text-black"
+            >My year in review 2020</span
+          >
+          <span class="block pt-2 font-body text-grey-20"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+          >
+        </div>
+      </a>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="container py-16 md:py-20" id="contact">
+  <h2
+    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+  >
+    Here's a contact form
+  </h2>
+  <h4
+    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+  >
+    Have Any Questions?
+  </h4>
+  <div class="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
+    <p class="font-body text-grey-10">
+      Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit
+      condimentum turpis nisl sem, viverra habitasse urna ante lobortis
+      fermentum accumsan. Viverra habitasse urna ante lobortis fermentum
+      accumsan.
+    </p>
+  </div>
+  <form class="mx-auto w-full pt-10 sm:w-3/4">
+    <div class="flex flex-col md:flex-row">
+      <input
+        class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5"
+        placeholder="Name"
+        type="text"
+        id="name"
+      />
+      <input
+        class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5"
+        placeholder="Email"
+        type="text"
+        id="email"
+      />
+    </div>
+    <textarea
+      class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-8"
+      placeholder="Message"
+      id="message"
+      cols="30"
+      rows="10"
+    ></textarea>
+    <button
+      class="mt-6 flex items-center justify-center rounded bg-primary px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20"
+    >
+      Send
+      <i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
+    </button>
+  </form>
+  <div class="flex flex-col pt-16 lg:flex-row">
+    <div
+      class="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3"
+    >
+      <div class="flex items-center">
+        <i class="bx bx-phone text-2xl text-grey-40"></i>
+        <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+          My Phone
+        </p>
+      </div>
+      <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
+        (+881) 111 222 333
+      </p>
+    </div>
+    <div
+      class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
+    >
+      <div class="flex items-center">
+        <i class="bx bx-envelope text-2xl text-grey-40"></i>
+        <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+          My Email
+        </p>
+      </div>
+      <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
+        name@mydomain.com
+      </p>
+    </div>
+    <div
+      class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
+    >
+      <div class="flex items-center">
+        <i class="bx bx-map text-2xl text-grey-40"></i>
+        <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
+          My Address
+        </p>
+      </div>
+      <p class="pt-2 text-left font-body font-bold text-primary lg:text-lg">
+        123 New York D Block 1100, 2011 USA
+      </p>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div
+  class="h-72 bg-cover bg-center bg-no-repeat sm:h-64 md:h-72 lg:h-96"
+  style="background-image: url(/assets/img/map.png)"
+></div> -->
+
+<!-- <div
+  class="relative bg-primary bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply lg:py-24"
+  style="background-image: url(/assets/img/bg-cta.jpg)"
+>
+  <div class="container relative z-30">
+    <h3
+      class="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl"
+    >
+      Keep <span class="font-bold">up-to-date</span> <br />
+      with what I'm up to
+    </h3>
+    <form class="mt-6 flex flex-col justify-center sm:flex-row">
+      <input
+        class="w-full rounded px-4 py-3 font-body text-black sm:w-2/5 sm:py-4 lg:w-1/3"
+        type="text"
+        id="email"
+        placeholder="Give me your Email"
+      />
+      <button
+        class="mt-2 rounded bg-yellow px-8 py-3 font-body text-base font-bold uppercase text-primary transition-colors hover:bg-primary hover:text-white focus:border-transparent focus:outline-none focus:ring focus:ring-yellow sm:ml-2 sm:mt-0 sm:py-4 md:text-lg"
+      >
+        Join the club
+      </button>
+    </form>
+  </div>
+</div>
+</div> -->
+
+<div class="bg-primary">
+  <div class="container flex flex-col justify-between py-6 sm:flex-row">
+    <p class="text-center font-body text-white md:text-left">
+      © Copyright Kim Jae Sung.
+    </p>
+    <!-- <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+      <a href="/">
+        <i
+          class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
+        ></i>
+      </a>
+      <a href="/" class="pl-4">
+        <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
+      </a>
+      <a href="/" class="pl-4">
+        <i class="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
+      </a>
+      <a href="/" class="pl-4">
+        <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
+      </a>
+      <a href="/" class="pl-4">
+        <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
+      </a>
+    </div> -->
+  </div>
+</div>
+
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+
+    
+  </body>
+</html>
